@@ -1,8 +1,5 @@
 import {Routes,Route} from 'react-router-dom'
 
-// home page background
-import homePageBackGroundImage from './assets/images/bg-images/background-33.jpg'
-
 // components
 import Header from './components/Header'
 
@@ -25,9 +22,6 @@ const App = () => {
           <Route path='/projects' element={<Projects />} />
           <Route path='/*' element={<NoPage/>} />
         </Routes>
-      </div>
-      <div className="image-container">
-        <img src={homePageBackGroundImage} alt="home-page-background-img" className='home-page-background-img'/>
       </div>
     </div>
   )

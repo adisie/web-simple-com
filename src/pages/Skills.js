@@ -1,9 +1,10 @@
 
-
 const Skills = () => {
   return (
-    <div>
-      Skills
+    <div className="skills-container">
+      <div className="skills sub-container">
+        <h3>Skills</h3>
+      </div>
     </div>
   )
 }

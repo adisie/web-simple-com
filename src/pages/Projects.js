@@ -1,8 +1,8 @@
 
 const Projects = () => {
   return (
-    <div>
-      Projects
+    <div className="sub-container">
+      <h3>Projects</h3>
     </div>
   )
 }
