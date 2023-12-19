@@ -1,0 +1,151 @@
+header {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+
+    // sub header
+    .sub-header {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .site-logo {
+            align-self: flex-start;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            .home-link {
+                margin-top: .5em;
+                text-decoration: none;
+                font-size: 1.35em;
+                font-weight: 700;
+                font-family: cursive;
+                font-style: italic;
+                color: $primary-txt-color;
+            }
+        }
+
+        .navigations {
+            height: 100%;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            border-bottom: 2px solid rgba($primary-txt-color,.5);
+
+            ul {
+                list-style-type: none;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                li {
+                    margin: 0 .3em;
+                    height: 70%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    .link {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        color: $primary-txt-color;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 3px;
+                        border-radius: 3px;
+                        background: $primary-txt-color;
+                        transition: 1s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+            .contact-link-container {
+                margin-left: .35em;
+                .contact-link {
+                    text-decoration: none;
+                    text-transform: lowercase;
+                    padding: .15em .73em;
+                    border: .125em solid rgba($primary-txt-color,.75);
+                    border-radius: .3em;
+                    color: rgba($primary-txt-color,1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 590px){
+    .sub-header {
+        flex-direction: column;
+
+        .site-logo {
+            flex-grow: 1;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .home-link {
+                width: 100%;
+                margin-bottom: .35em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+            }
+        }
+        .navigations {
+            width: 100%;
+            padding-bottom: .3em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid rgba($primary-txt-color,.5);
+            
+
+            ul {
+                align-self: flex-start;
+                flex-grow: 1;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start !important;
+                li {
+
+                    &::after {
+                        display: none;
+                    }
+
+                    .link {
+                        transition: 1s;
+                        &:hover {
+                            color: rgba($primary-txt-color,.5);
+                        }
+                    }
+                }
+            }
+
+            .contact-link-container {
+                margin-bottom: .3em;
+            }
+        }
+    }
+}
