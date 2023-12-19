@@ -181,12 +181,12 @@ header .sub-header .navigations .contact-link-container .contact-link {
   display: block;
   margin: 0.25em 0.13em;
   color: rgb(171, 173, 188);
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
 }
 .sub-home .home .text-con .username-span .name {
   color: rgba(171, 173, 188, 0.75);
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .sub-home .home .text-con .profession {
   color: #abadbc;

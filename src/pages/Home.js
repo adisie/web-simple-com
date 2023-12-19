@@ -24,15 +24,15 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div className="img-con"
-            initial={{y: "100vh",scale: 0,opacity: 0}}
-            animate={{y: 0,scale: 1,opacity: 1,rotate: 360}}
+            initial={{scale: 0,opacity: 0}}
+            animate={{scale: 1,opacity: 1}}
             transition={{type: 'spring',stiffness: 12,duration: 1}}
           >
             <div className="image-container">
               <motion.img src={myPicture} alt="" 
-                initial={{scale: 0,opacity: 0}}
-                animate={{scale: 1,opacity: 1}}
-                transition={{delay: 1, duration: 1.3}}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{delay: .65, duration: 1.3}}
               />
             </div>
           </motion.div>
